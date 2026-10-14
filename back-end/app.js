@@ -27,4 +27,7 @@ app.get("/",(req,res) =>{
 const estudiantesRoutes = require('./server/routes/estudiantes.routes');
 app.use('/api/estudiantes', estudiantesRoutes);
 
+const authRoutes = require('./server/routes/auth.routes');
+app.use('/api/auth', authRoutes);
+
 module.exports=app;
